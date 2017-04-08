@@ -53,6 +53,10 @@ exports.oauth = function oauth(options) {
                 console.log(data);
                 console.log(response);
                 console.log(req);
+                console.log('req.session');
+                console.log('*****');
+                console.log(req.session);
+                console.log('*****');
                 req.session.oauth = data;
                 state = req.session.oauth_state;
                 delete req.session.oauth_state;

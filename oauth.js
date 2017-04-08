@@ -50,6 +50,9 @@ exports.oauth = function oauth(options) {
                 },
             }).on('complete', function(data, response) {
               if (response.statusCode == 200) {
+                console.log(data);
+                console.log(response);
+                console.log(req);
                 req.session.oauth = data;
                 state = req.session.oauth_state;
                 delete req.session.oauth_state;

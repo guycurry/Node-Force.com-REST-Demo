@@ -15,7 +15,7 @@ var port = process.env.PORT || 3001; // use heroku's dynamic port or 3001 if loc
 var cid = process.env.CLIENT_ID || "3MVG9i1HRpGLXp.reEq0HmhlJzGTzYRIwa8bY19Z_.j_cRU2swpBdmA.W3ypOJjx.MwbjmMoDGILzmM0TlHG6";
 var csecr = process.env.CLIENT_SECRET || "2130532915870108718";
 var lserv = process.env.LOGIN_SERVER || "https://login.salesforce.com";
-var redir = process.env.REDIRECT_URI || "http://localhost:" + port + "/token";
+var redir = process.env.REDIRECT_URI || "https://cloudmgmt-agilesupport.herokuapp.com/token";
 
 /**
  * Middleware to call identity service and attach result to session
